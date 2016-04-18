@@ -7,18 +7,18 @@
 # bab ---> a
 # bcb ---> c
 # bxb ---> x
-REGEXP_1 = ''
+REGEXP_1 = '[acx]'
 
 # ooooAAAooooo ---> AAA
 # asdfasdAAAAfasdf ---> AAAA
 # AAAAAAfasdf ---> AAAAAA
 # iiiiiA ----> A
-REGEXP_2 = ''
+REGEXP_2 = 'A+'
 
 # There is <html> tag ---> <html>
 # color can be used as <font color='red'> ---> <font color='red'>
 # There is x <> 10 and something was wrong with < or > brace. ---> < or >
-REGEXP_3 = ''
+REGEXP_3 = '\<[.]+\>'
 
 # C@n Y0u f1nd CaPoAira? ---> CaPoAira
 # s0 Wh@t i5 CamelStyle? ---> CamelStyle
